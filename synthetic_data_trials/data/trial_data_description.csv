@@ -1,0 +1,29 @@
+Variable,Description,DataType
+MASK_ID,Masked patient ID for the individual,int64
+REGION_C,Region the individual is from,object
+COU1A,Country the individual is from,object
+AGECAT,"Age category, integer encoded",object
+AGELE70,Whether or not the individual is less than 70 years of age,object
+WHITE,Whether or not the individual is white,object
+MALE,Whether or not the individual is male,object
+BMI,"The BMI of the individual, calculated from reported height and weight values",float64
+TRTN,"Treatment received by the individual, integer encoded",object
+DUREXP_N,"Duration of exposure to treatment for the individual, in days",float64
+DUREXP_C,"Duration of exposure to treatment, binned into categories",object
+DTH_C,"Whether or not the patient died (1), was lost to follow up (99), or was censored (0)",object
+TUMLOC,Integer encoded tumour location,object
+TUMORSZ,Integer encoded tumour size,object
+SZ3TO6,Whether or not the tumour size was between 3 and 6cm,object
+SZ6TO10,Whether or not the tumour size was between 6 and 10cm,object
+PERFST_C,"Performance status, integer encoded",object
+PSTAT0,Whether or not the performance status was equal to 0,object
+AVGDOS_N,"Average dose of the treatment received, numeric",float64
+AVGDOS_C,"Average dose of the treatment received, integer encoded categorical",object
+CREA,Baseline creatinine value,float64
+PLAT2,Baseline platelets value,float64
+SGOT,Baseline SGOT value,float64
+SGPT,Baseline SGPT value,float64
+TBIL,Baseline total bilirubin value,float64
+WBC,Baseline white blood cell count,float64
+EVENT.RFS,"Event status at the end of follow up (0 = censored, no recurrence; 1 = recurrence of tumor)",object
+TT_EVENT.RFS,"Time to event at the end of follow up, days",int64
